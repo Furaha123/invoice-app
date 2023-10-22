@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #141625;
+}
+.container {
+  width: 80%;
+  margin-top: 4rem;
+  margin-left: 80px;
+  padding: 8px;
+  justify-content: center;
+}
+
+.combined-title {
+  display: flex;
+  width: 75%;
+  padding: 10px;
+  align-items: center;
+
+  justify-content: space-around;
+  margin-left: 15rem;
+}
+
+.invoice-btn {
+  background-color: #4a15ad;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.status-button .text {
+  font-size: 16px;
+  display: inline-block; /* Display the text as an inline-block element */
+  width: 100%; /* Make the text take up the full width of the button */
+}
+
+.status-button .text {
+  font-size: 16px;
+}
+
+.status-button .text.pending {
+  color: orange;
+}
+
+.status-button .text.paid {
+  color: #ede7e1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.container-fluid {
+  padding: 5px;
+  border-radius: 10px;
+  width: 75%;
+  height: 50%;
+  margin-left: 15rem;
+  margin-right: 10rem;
+  /* background-color: red; */
+}
+
+.title-invoice {
+  display: block;
+  color: #ccc;
+  font-size: 12px;
+  justify-content: center;
+  position: relative;
+  right: 0;
+  left: 0;
+  width: 35%;
+
+  padding: 5px;
+  margin-right: 100px;
+}
+.title-invoice.status {
+  display: flex;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.invoice-btn:hover {
+  background-color: #0056b3;
+}
+
+.sub-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.invoice-container {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 12px;
+  background-color: #1e2139;
+  display: flex;
+  margin-left: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.invoice-container:hover {
+  background-color: #1e2139;
+  border: 1px solid #0056b3;
+}
+
+.invoice-name {
+  font-weight: bold;
+  color: #ede7e1;
+  padding: 20px;
+}
+
+.invoice-amount {
+  font-weight: bold;
+  color: #dfe3fa;
+  padding: 20px;
+  align-items: center;
+}
+
+.invoice-date {
+  color: #888;
+  text-align: center;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.status-button {
+  width: 100%;
+  background-color: #1f2c3f;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.status-button .text {
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+}
+
+.status-button .text {
+  font-size: 16px;
+}
+
+.status-button .text.pending {
+  color: #ff8f00;
+}
+
+.status-button .text.paid {
+  color: #33b665;
+}
+
+/* Style for the author */
+.invoice-author {
+  color: #888;
+}
+
+/* Style for the container of date and author */
+.date-author-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.total-text {
+  font-size: 1rem;
+}
+span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Original CSS */
+
+.invoice-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.status-button {
+  width: auto;
+  min-width: 100px;
+  white-space: nowrap;
+  margin-right: 10px;
+
+  text-align: center;
+}
+
+.option {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .combined-title {
+    width: 98%;
+    margin-left: 7rem;
+
+    justify-content: center;
+    /* transform: translateY(10px); */
+  }
+
+  .invoice-btn {
+    margin-left: 0;
+    margin-top: 10px; /* Add some space between elements */
+  }
+
+  .status-button {
+    width: 100%;
+    margin-top: 10px;
+    
+  }
+
+  .title-invoice {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .horizontal-container {
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+  }
+  .horizontal-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    /* width: 70%; */
+  }
+  span p,
+  .option {
+    font-size: 10px;
+  }
+
+  .invoice-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .invoice-container {
+    margin-left: -140px;
+    padding: 10px;
+  }
+
+  
+
+}

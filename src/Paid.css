@@ -1,0 +1,261 @@
+.paid-details {
+  /* background-color: red; */
+  width: 80%;
+  margin-left: 9rem;
+  margin-top: 70px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.contsiner-title {
+  display: flex;
+  /* background-color: red; */
+  width: 74%;
+}
+.paid-title {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 70px;
+  height: 40px;
+
+  transform: translateY(-60px);
+  margin-left: 180px;
+}
+/* Style the icon within .paid-title */
+.paid-title > a svg {
+  color: #9277ff;
+  font-size: 10px;
+  margin-left: -10px;
+}
+
+.paid-title h4 {
+  font-size: 12px;
+  color: #f4efef;
+  font: bold;
+}
+.status-name {
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.paid-update {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-left: 200px;
+}
+.paid-status {
+  display: flex;
+  align-items: center;
+  margin-top: -60px;
+  background-color: #1e2139;
+  border-radius: 1rem;
+  margin-left: 10rem;
+  width: 75%;
+  padding-left: 10px;
+  height: 20vh;
+
+}
+.mark-button {
+  background-color: #312D60; 
+  color: #454561;
+  padding: 13px 25px; 
+  border: none; 
+  border-radius: 15px; 
+  cursor: pointer; 
+  font-size: 10px; 
+height: 60px;
+width: 100%;
+height: 50%;
+margin-left: 40px;
+}
+
+.mark-button:hover {
+  background-color: #45a049; /* Change color on hover */
+}
+
+.address-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 10px 10px;
+  padding-left: 7rem;
+}
+
+.paid-info {
+  background-color: #1e2139;
+  border-radius: 8px;
+  padding: 24px;
+
+  margin-top: 30px;
+  margin-left: 10rem;
+  width: 75%;
+  max-width: 830px;
+  /* background-color: red; */
+  /* height: 90vh; */
+}
+
+.paid-button {
+  position: relative;
+  padding: 10px 30px;
+  background-color: #1f2c3f;
+  color: #64d1c3;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.paid-button::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #64d1c3;
+  border-radius: 50%;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+
+.delete-button {
+  padding: 8px 12px;
+  background-color: #FF9797;
+  color: #7E88C3;
+  border-radius: 20px;
+  cursor: pointer;
+   width: 100%;
+height: 50px;
+border: none;
+margin-left: 30px;
+}
+
+.edit-button {
+  padding: 15px;
+  background-color: #DFE3FA;
+  color: #043b5c;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 50%;
+height: 50px;
+border: none;
+
+}
+
+.delete-button:hover,
+.edit-button:hover {
+  background-color: #DFE3FA;
+}
+
+p {
+  color: #f4efef;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f4efef;
+}
+h5 {
+  color: #fff;
+}
+
+.status-invoice {
+  width: 100%;
+  padding: 15px;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  height: 80vh;
+}
+
+.payment-due {
+  width: 20%;
+  padding: 5px;
+  margin-left: -14px;
+  text-align: left;
+}
+
+.Bill-to {
+  padding: 4px;
+  width: 160px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  transform: translateY(-95px);
+}
+
+.Bill-to p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.Bill-to p:first-child {
+  font-weight: bold;
+}
+.send-to {
+  margin-left: 400px;
+  margin-bottom: 20px;
+  transform: translateY(-320px);
+}
+
+.item-container {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252945;
+  padding: 40px;
+  margin-top: -20px;
+  transform: translateY(-102px);
+  border-radius: 10px;
+}
+
+.item-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  /* gap: 150px; */
+}
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  /* gap: 160px; */
+  margin-top: 20px;
+}
+
+.item-qty {
+  margin-left: 19px;
+}
+.item-total {
+  margin-left: -16px;
+}
+
+.amount-due {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  background-color: #0c0e16;
+  padding: 20px;
+  transform: translateY(40px);
+  width: 113.3%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -40px;
+
+  border-radius: 10px;
+}
+
+.invoice-date {
+  width: 20%;
+  padding: 5px;
+  margin-left: -14px;
+  text-align: left;
+}
